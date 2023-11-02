@@ -4,10 +4,10 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var animalsRouter = require('./routes/animals');
-// var boardRouter = require('./routes/board');
-// var chooseRouter = require('./routes/choose');
-// var indexRouter = require('./routes/index');
-// var usersRouter = require('./routes/users');
+//var boardRouter = require('./routes/board');
+//var chooseRouter = require('./routes/choose');
+var indexRouter = require('./routes/index');
+var usersRouter = require('./routes/users');
 
 var app = express();
 
