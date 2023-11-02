@@ -4,12 +4,10 @@ block content
   h1= title
   p Welcome to #{title}
   p Welcome to my server page
-   button(type="button", class="btn btn-primary" onclick="goFaster()") Press Me
+  button(type="button", class="btn btn-primary" onclick="goFaster()") Press Me
   
   div#faster Increase the speed
-
-  a(href="/vehicles") Vehicles Search Results
-    script.
+  script.
       var mph = 20;
       var change = 1;
 
