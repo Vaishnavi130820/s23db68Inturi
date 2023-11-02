@@ -4,4 +4,18 @@ block content
   h1= title
   p Welcome to #{title}
   p Welcome to my server page
-  button(type="button", class= onclick="doReduce()") press me
+   button(type="button", class="btn btn-primary" onclick="goFaster()") Press Me
+  
+  div#faster Increase the speed
+
+  a(href="/vehicles") Vehicles Search Results
+    script.
+      var mph = 20;
+      var change = 1;
+
+      function goFaster() {
+        mph += change;
+        change += 1;
+        var div = document.getElementById("faster");
+        div.textContent = "MPH " + mph + " with change " + change;
+      }
