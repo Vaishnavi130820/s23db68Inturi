@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  h1= title
+  - var results =[{animalName:"DOG", animalAge:"5", animalCost:200000},{animalName:"CAT", animalAge:"7", animalCost:50000},{animalName:"PIG", animalAge:"8", animalCost:70000}]
+  div(class="container-fluid")
+  div(class="row")
+   each v,index  in results 
+    div(class="col-sm-2") #{v.animalName}, #{v.animalAge}, #{v.animalCost}
+    
