@@ -6,4 +6,7 @@ block content
   div(class="row")
    each v,index  in results 
     div(class="col-sm-2") #{v.animalName}, #{v.animalAge}, #{v.animalCost}
-    
+      script.
+        function buy(a){
+            alert(`You purchased Item ${a+1}`)
+        }
